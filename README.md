@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧙‍♂️ Envoker
 
-Currently, two official plugins are available:
+**Envoker** ist dein magischer Desktop-Assistent für DevOps – eine Electron-basierte Anwendung, mit der du lokale Entwicklungsumgebungen einfach aufsetzen und verwalten kannst.  
+Ob Docker, Kubernetes, Datenbanken oder Migrationstools – _Envoker_ macht dein Setup schnell, übersichtlich und klickbar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🐳 **Docker Wizard**
+  - Templates für Compose-Projekte (PostgreSQL, Redis, RabbitMQ, uvm.)
+  - Start/Stopp über UI
+  - .env-Datei Editor
 
-- Configure the top-level `parserOptions` property like this:
+- 📦 **DB Installer & Migrationstools**
+  - Lokales Setup für PostgreSQL, MySQL, MongoDB
+  - Flyway-Support (Migrationsdateien erstellen & ausführen)
+  - SQL-Migrationen versionieren
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- ☸️ **Kubernetes Shortcuts**
+  - Minikube, Kind oder K3s lokal starten/stoppen
+  - Clusterstatus anzeigen
+  - Helm-Charts deployen
+  - Ingress + TLS (mkcert) per Klick einrichten
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- 🔐 **Security Setup**
+  - TLS-Zertifikate generieren (self-signed oder mkcert)
+  - Zugriffsschutz für lokale Services via Traefik
+
+- 🧩 **Snippet- & Template-Verwaltung**
+  - Eigene Compose/K8s-Templates speichern
+  - Shell/Bash-Snippets speichern + ausführen
+
+- 🖥️ **Terminal-Ausgabe in der UI**
+  - Ausgabe von `docker`, `kubectl`, `flyway` & Co. in der App anzeigen
+
+---
+
+## 🛠️ Technologie-Stack
+
+- **Plattform:** Electron
+- **Frontend:**  React 
+- **Integration:** Shell Commands, Config-Dateien, System-Kommandos
+
+---
+
+## 📦 Installation (Entwicklung)
+
+---
